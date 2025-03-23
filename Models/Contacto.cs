@@ -1,12 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 
 namespace PROYECTO_WEB.Models
 {
+    [Table("t_contacto")]
     public class Contacto
     {
         [Required(ErrorMessage = "El nombre es obligatorio")]
