@@ -7,6 +7,9 @@ namespace PROYECTO_WEB.Models
     [Table("t_contacto")]
     public class Contacto
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         [Required(ErrorMessage = "El nombre es obligatorio")]
         public string? Nombre { get; set; }
         [NotNull]
